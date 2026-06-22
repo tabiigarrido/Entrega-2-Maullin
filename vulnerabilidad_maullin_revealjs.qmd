@@ -1,0 +1,401 @@
+---
+title: "Vulnerabilidad territorial en asentamientos irregulares periurbanos del Santuario Humedales Río Maullín"
+author: "Tabita Garrido"
+lang: es
+format:
+  revealjs:
+    theme: default
+    css: styles_revealjs.css
+    slide-number: true
+    transition: fade
+    background-transition: fade
+    center: false
+    toc: false
+    chalkboard: false
+    self-contained: true
+    width: 1280
+    height: 720
+    margin: 0.06
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r setup}
+#| include: false
+library(knitr)
+```
+
+##  {.center background-color="#0a1f14"}
+
+::::: portada-wrap
+::: supra
+R analisis estadistico · Geografía UAH
+:::
+
+# Vulnerabilidad Territorial
+
+<p class="subtitulo">
+
+Condiciones de Saneamiento y Precariedad Multidimensional en Asentamientos Irregulares de los Humedales Periurbanos de Maullín
+
+</p>
+
+::: divider
+:::
+
+<p class="autora">
+
+Tabita Garrido · 2026
+
+</p>
+
+<p class="meta">
+
+Datos de base: CPV 2024 (INE Chile) & Metodología SIVUST/MIDESO
+
+</p>
+:::::
+
+# Problema de Investigación {.section-slide background-color="#0d2b1e"}
+
+::: {.fase-badge}
+FASE 01
+:::
+
+::: {.esquema-item}
+**→ ¿Dónde viven estas comunidades?**\
+Dentro del área del **Santuario de la Naturaleza**, una zona protegida ambientalmente.
+:::
+
+::: {.esquema-item}
+**≈ ¿En qué condiciones?**\
+En condiciones de **exclusión sanitaria**: sin saneamiento básico.
+:::
+
+::: {.esquema-item}
+**! ¿Cuál es la contradicción?**\
+El lugar está **protegido ambientalmente**, pero sus habitantes **no tienen saneamiento básico**.
+:::
+
+## Planteamiento e Hipótesis {.smaller}
+
+::: columns
+::: {.column width="50%"}
+**El problema: más que una falla técnica**
+
+::: {.esquema-item}
+**→ ¿Qué genera el problema?**\
+Estas viviendas usan **fosas sépticas** que generan una **contaminación directa** hacia el humedal.
+:::
+
+::: {.esquema-item}
+**≈ ¿Por qué no es solo técnico?**\
+**Harvey** plantea que esta situación es **desigualdad de acceso a infraestructura**.
+:::
+
+::: {.esquema-item}
+**! Pregunta de investigación**\
+¿Si estas localidades tienen **vulnerabilidad sanitaria diferenciada**?
+:::
+:::
+
+::: {.column width="50%"}
+**Hipótesis de Investigación**
+
+::: {.hipotesis-box}
+*"Estos problemas —falta de saneamiento y vulnerabilidad demográfica— no son independientes, sino que se acumulan en las mismas localidades. Por eso se pueden sintetizar en un solo índice."*
+:::
+
+::: {.esquema-item}
+**! ¿Cómo se operacionaliza?**\
+El **Ministerio de Desarrollo Social** formalizó estas brechas mediante el **SIVUST (2020)**, marco que orienta la construcción del índice (IVSP).
+:::
+
+::: {.esquema-item}
+**! ¿Por qué importa medirlo en un solo índice?**\
+Si los problemas se acumulan en las mismas localidades, un índice compuesto permite **priorizar dónde intervenir primero**, en vez de mirar cada variable por separado.
+:::
+:::
+:::
+
+# Metodología {.section-slide background-color="#0d2b1e"}
+
+::: fase-badge
+FASE 02
+:::
+
+Construcción del Índice de Vulnerabilidad Sanitaria Periurbana (IVSP)
+
+## Esquema Paso a Paso del Procedimiento {.smaller}
+
+Para objetivar la realidad sanitaria periurbana, se diseñó una metodología secuencial para construir el **Índice de Vulnerabilidad Sanitaria Periurbana (IVSP)**:
+
+::: {.steps-grid}
+::: {.step-card}
+::: {.step-title}
+1 · Selección
+:::
+
+Se identificaron *5 indicadores críticos* del CPV 2024: *fosa séptica*, *agua de pozo*, *adultos mayores (+60)*, *discapacidad* y *mediagua* — variables que capturan tanto el déficit sanitario directo como la vulnerabilidad sociodemográfica asociada.
+
+**→ Clave: cada indicador responde a una dimensión distinta de vulnerabilidad.**
+:::
+
+::: {.step-card}
+::: {.step-title}
+2 · Normalización
+:::
+
+Cada indicador se transformó a escala *0–100* con la fórmula min-max: `(x - mín) / (máx - mín) × 100`. Esto permite comparar variables con unidades distintas en una métrica común y directamente sumable.
+
+**→ Clave: sin esto, fosa séptica y discapacidad no serían comparables.**
+:::
+
+::: {.step-card}
+::: {.step-title}
+3 · Ponderación
+:::
+
+Se asignaron pesos según el impacto en la contaminación hídrica: **fosa séptica 35%**, *agua pozo y adultos mayores 20% cada uno*, *discapacidad 15%*, *mediagua 10%* — basados en el marco técnico SIVUST/MIDESO 2020.
+
+**→ Clave: la fosa séptica pesa más por su daño directo al humedal.**
+:::
+
+::: {.step-card}
+::: {.step-title}
+4 · Agregación
+:::
+
+Los 5 subíndices normalizados se multiplican por su peso y se suman, generando el *puntaje IVSP final (0–100)* de cada localidad — la base para clasificar y comparar su vulnerabilidad sanitaria.
+
+**→ Clave: el resultado final es un solo número comparable entre las 9 localidades.**
+:::
+:::
+
+## Indicadores y Ponderación del IVSP {.smaller}
+
+::: columns
+::: {.column width="50%"}
+**Pesos Teóricos del Índice**
+
+El IVSP concentra su mayor peso en la infraestructura sanitaria directa por su impacto en la contaminación hídrica del humedal:
+
+| Indicador | Peso | Dimensión |
+|---|---|---|
+|  Fosa séptica | **35%** | Contaminación local |
+|  Agua de pozo | **20%** | Exclusión red formal |
+|  Adultos mayores (+60) | **20%** | Sensibilidad/dependencia |
+|  Discapacidad | **15%** | Dificultad de respuesta |
+|  Mediagua | **10%** | Precariedad habitacional |
+
+::: {.esquema-item}
+**→ ¿Por qué fosa séptica pesa más?**\
+Es el indicador con mayor impacto directo en la contaminación hídrica del Santuario — el vector de daño ambiental más inmediato sobre el cuerpo de agua protegido.
+:::
+:::
+
+::: {.column width="50%"}
+**Lógica de Agregación: ¿cómo se combinan los indicadores?**
+
+Una vez normalizados los 5 indicadores (escala 0–100), se combinan en un solo puntaje por localidad mediante una **suma ponderada lineal**: cada indicador se multiplica por su peso teórico y se suman los resultados.
+
+::: {.formula-box}
+IVSP = 0.35·P~fosa~ + 0.20·P~pozo~ + 0.20·P~adulto~ + 0.15·P~discap~ + 0.10·P~mediagua~
+:::
+
+::: {.highlight-box}
+Aplicando esta fórmula a las 9 localidades, se obtiene un rango completo de vulnerabilidad. En la próxima diapositiva se muestra qué localidades ocupan los extremos y qué significa para el diagnóstico territorial.
+:::
+:::
+:::
+
+## Estadísticos Descriptivos del Estudio {.smaller}
+
+::: {.esquema-item}
+**→ ¿Cómo se obtiene?**\
+Media, mediana, desviación estándar y rangos calculados en R con `summary()` y `sd()` sobre las 9 localidades del humedal, usando datos normalizados del CPV 2024.
+:::
+
+![Tabla de estadísticos descriptivos por variable (n=9). Fuente: CPV 2024, elaboración propia en R.](output/tabla_estadisticos.png)
+
+::: {.esquema-item}
+**≈ ¿Qué significa?**\
+La **fosa séptica** presenta la mayor dispersión (**DS=0.096**), mostrando que el déficit de saneamiento **no se distribuye igual** entre localidades — algunas concentran proporciones muy altas, otras valores moderados. La **mediagua**, en cambio, tiene los valores más bajos: la precariedad extrema está concentrada en pocas localidades, no es generalizada.
+:::
+
+::: {.esquema-item}
+**! ¿Qué demuestra para la hipótesis?**\
+El **IVSP** sintetiza estas dimensiones en un índice con media y mediana entre 30 y 40 puntos sobre 100, confirmando **vulnerabilidad sanitaria significativa con diferenciación interna suficiente** — exactamente lo que plantea la hipótesis y la base que sostiene los modelos de regresión.
+:::
+
+## Índice de Vulnerabilidad por Localidad (IVSP) {.smaller}
+
+::::::::: columns
+::::::: {.column width="48%"}
+**Análisis de Resultados**
+
+::: esquema-item
+**→ ¿Cómo se construyó?**\
+Aplicación de la fórmula IVSP ponderada sobre datos CPV 2024 normalizados min-max. Cada barra representa el puntaje final de cada localidad en escala 0–100.
+:::
+
+::: esquema-item
+**≈ ¿Qué significa?**\
+El gráfico revela la brecha real entre los 9 sectores periurbanos de Maullín. No hay homogeneidad: hay localidades con vulnerabilidad crítica y otras con déficit mínimo.
+:::
+
+::: esquema-item
+**! ¿Qué demuestra?**\
+**El Habal (100)** es la localidad más vulnerable del humedal, gatillada por altas tasas combinadas de fosa séptica y adultos mayores dependientes. **Coyam (0)** opera como mínimo relativo.
+:::
+
+::: highlight-box
+La hipótesis se confirma: existe diferenciación interna significativa. El IVSP logra clasificar y sectorizar la intensidad de la exclusión social y sanitaria.
+:::
+:::::::
+
+::: {.column width="52%"}
+![Figura 2. IVSP por localidad. Escala 0–100. Humedal Río Maullín. CPV 2024. Elaboración propia en R.](output/ivsp_localidad.png){height=380px fig-align="center"}
+:::
+:::::::
+
+## Estructura de Correlaciones entre Indicadores {.smaller}
+
+::: columns
+::: {.column width="48%"}
+**Interpretación de la Matriz**
+
+Estas variables que componen el índice, ¿se mueven **juntas** o son **independientes** entre sí? Eso lo vemos en las correlaciones.
+
+::: {.esquema-item}
+**→ ¿Cómo se obtuvo?**\
+Correlación de Pearson (r) entre los 5 indicadores del IVSP. Valores cercanos a 1 indican que ambas variables suben juntas; cercanos a -1, que se mueven en sentido contrario.
+:::
+
+::: {.esquema-item}
+**≈ r = 0.82 y r = 0.59: vulnerabilidad que se acumula**\
+Adultos mayores y discapacidad correlacionan **0.82** — van juntos en las mismas localidades. Y la fosa séptica correlaciona **0.59** con discapacidad: el déficit sanitario **no es independiente** de la vulnerabilidad demográfica.
+:::
+
+::: {.esquema-item}
+**! r = -0.39: dos perfiles de déficit distintos**\
+Fosa séptica y agua de pozo correlacionan negativo. Esto **no significa menor vulnerabilidad**, sino **dos tipos de déficit distintos**: unas localidades con problema de eliminación de aguas, otras con problema de abastecimiento.
+:::
+:::
+
+::: {.column width="52%"}
+![Figura 3. Matriz de correlación de Pearson entre indicadores del IVSP. Elaboración propia en R con corrplot.](output/corrplot.png)
+:::
+:::
+
+## Distribución Espacial de la Desigualdad {.smaller}
+
+:::::::: columns
+:::::: {.column width="48%"}
+**Justificación Teórica**
+
+Como señala **David Harvey (2008)**, la segregación espacial de los servicios básicos expresa territorialmente la desigualdad económica de las comunidades marginadas.
+
+::: highlight-box
+*"El espacio geográfico no es un mero contenedor, sino la plasmación de las brechas de poder y acceso a las condiciones de sanidad y habitabilidad."*
+:::
+
+::: esquema-item
+**→ ¿Cómo se construyó?**\
+Cartografía elaborada en QGIS con datos CPV 2024. Polígonos coloreados según puntaje IVSP en 3 categorías.
+:::
+
+::: esquema-item
+**! ¿Qué demuestra?**\
+El daño ecológico y la vulnerabilidad humana ocurren en las **mismas coordenadas geográficas**. El Habal (rojo) borda directamente el cauce del Río Maullín.
+:::
+::::::
+
+::: {.column width="52%"}
+![Figura 4. Cartografía del Índice IVSP. Escala 1:146.345. Elaboración propia QGIS.](output/mapa_ivsp.png)
+:::
+::::::::
+
+## Análisis de Regresión Lineal {.smaller .compact-slide}
+
+::: columns
+::: {.column width="48%"}
+![Tabla 1. Modelos de regresión lineal (MCO) del IVSP. n=9.](output/regression_lineal.png){height=320px}
+
+::: {.esquema-item}
+**1. Las tres variables van en la dirección esperada**\
+A más **fosa séptica**, **adultos mayores** o **agua de pozo**, más alto es el IVSP. Confirma las tres hipótesis (H1, H2, H3).
+:::
+
+::: {.esquema-item}
+**2. Fosa séptica y adultos mayores explican más, por separado**\
+Cada una, sola, explica un tercio (**33-34%**) de por qué unas localidades son más vulnerables. Agua de pozo ayuda menos (**14%**).
+:::
+:::
+
+::: {.column width="52%"}
+![Figura 5. Valores predichos del IVSP según proporción de fosa séptica. Modelo 4.](output/valores_predichos.png)
+
+::: {.esquema-item}
+**3. El modelo conjunto (M4) no es confiable en sus números**\
+Se ajustó "demasiado bien" por tener pocos datos (solo 9 localidades) — matemáticamente sospechoso. Lo único confiable: las tres variables siguen apuntando en la misma dirección positiva.
+:::
+:::
+:::
+
+## Conclusiones del Diagnóstico Territorial {.smaller}
+
+::::::: concl-grid
+::: concl-card
+**Hipótesis Validada**
+
+Las 9 localidades analizadas **no representan un bloque homogéneo**. El IVSP logró clasificar y sectorizar con éxito la intensidad de la exclusión social y sanitaria.
+
+*→ El Habal representa la prioridad máxima para intervención pública.*
+:::
+
+::: {.concl-card}
+**📍 Patrón Territorial Identificado**
+
+La concentración espacial de altos valores de vulnerabilidad en el borde inmediato del Santuario demuestra que el daño ecológico y la vulnerabilidad humana ocurren en las mismas coordenadas.
+
+*→ Justifica el enfoque de "Injusticia Ambiental" de Harvey.*
+:::
+
+::: concl-card
+**Hallazgo Correlacional Clave**
+
+La correlación r=0.82 entre adultos mayores y discapacidad revela un núcleo demográfico vulnerable concentrado espacialmente.
+
+*→ Intervenciones deben ser diferenciadas por tipo de déficit.*
+:::
+
+::: concl-card
+**⚠ Limitación Muestral (n=9)**
+
+Si bien n=9 impide inferencias poblacionales generales, el análisis bivariado de Pearson demuestra alta coherencia teórica y empírica.
+
+*→ Estudio exploratorio con sólida base metodológica.*
+:::
+:::::::
+
+##  {.center background-color="#0a1f14"}
+
+::::: cierre-wrap
+::: fase-badge
+EXPOSICIÓN FINAL
+:::
+
+# Gracias
+
+::: divider
+:::
+
+**Tabita Garrido**
+
+Carrera de Geografía · Universidad Alberto Hurtado
+
+*Año 2026*
+:::::
