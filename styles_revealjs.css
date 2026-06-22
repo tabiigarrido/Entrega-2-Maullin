@@ -1,0 +1,687 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* ===== Tema base Maullín (convertido de scss a css plano) ===== */
+.reveal {
+  font-family: 'Inter', sans-serif;
+  background-color: #0d2b1e;
+}
+
+.reveal .slides {
+  font-size: 26px;
+}
+
+.reveal body, .reveal {
+  color: #e8e0d0;
+}
+
+.reveal h1, .reveal h2, .reveal h3 {
+  font-weight: 800;
+  color: #c9a227;
+}
+
+.reveal h2 {
+  font-size: 1.5em;
+  border-bottom: 1px solid rgba(201,162,39,0.3);
+  padding-bottom: 0.3em;
+  margin-bottom: 0.6em;
+}
+
+.reveal .slide-background {
+  background-color: #0d2b1e;
+}
+
+.reveal table {
+  font-size: 0.7em;
+}
+
+.reveal table th {
+  background: rgba(201,162,39,0.2);
+  color: #c9a227;
+}
+
+.reveal table td, .reveal table th {
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  padding: 0.4em 0.6em;
+}
+
+.reveal strong {
+  color: #e8c547;
+}
+
+.reveal img {
+  border-radius: 10px;
+  border: 1px solid rgba(201,162,39,0.2);
+}
+
+.reveal code {
+  background: rgba(255,255,255,0.08);
+  color: #e8c547;
+}
+
+.reveal a {
+  color: #e8c547;
+}
+
+/* ===== Layout classes ===== */
+.portada-wrap { text-align: center; }
+.portada-wrap .supra {
+  font-size: 0.55em;
+  letter-spacing: 0.3em;
+  color: #c9a227;
+  text-transform: uppercase;
+  margin-bottom: 0.6em;
+}
+.portada-wrap h1 {
+  font-size: 1.8em;
+  color: #fff !important;
+  border-bottom: none !important;
+}
+.portada-wrap .subtitulo {
+  font-size: 0.6em;
+  color: #d4cfc4;
+  max-width: 800px;
+  margin: 0.6em auto;
+  line-height: 1.5;
+}
+.portada-wrap .autora {
+  font-size: 0.55em;
+  color: #e8c547;
+  font-weight: 600;
+  margin-top: 1em;
+}
+.portada-wrap .meta {
+  font-size: 0.45em;
+  color: #d4cfc4;
+}
+.divider {
+  width: 60px;
+  height: 2px;
+  background: #c9a227;
+  margin: 0.8em auto;
+}
+
+/* ===== Section slides ===== */
+.section-slide {
+  text-align: center;
+}
+.fase-badge {
+  display: inline-block;
+  background: rgba(201,162,39,0.15);
+  color: #c9a227;
+  border: 1px solid #c9a227;
+  border-radius: 20px;
+  padding: 0.2em 0.8em;
+  font-size: 0.5em;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5em;
+}
+
+/* ===== Esquemas ===== */
+.esquema-item {
+  background: rgba(201,162,39,0.06);
+  border-left: 3px solid #c9a227;
+  border-radius: 0 8px 8px 0;
+  padding: 0.5em 0.8em;
+  margin-bottom: 0.5em;
+  font-size: 0.62em;
+  line-height: 1.45;
+  text-align: left;
+}
+
+.highlight-box {
+  background: rgba(201,162,39,0.08);
+  border-left: 3px solid #c9a227;
+  border-radius: 0 8px 8px 0;
+  padding: 0.5em 0.8em;
+  margin-top: 0.6em;
+  font-size: 0.6em;
+  font-style: italic;
+  color: #d4cfc4;
+  text-align: left;
+}
+
+.alerta-box {
+  background: rgba(255,160,50,0.08);
+  border: 1px solid rgba(255,160,50,0.3);
+  border-radius: 10px;
+  padding: 0.6em 0.9em;
+  margin-top: 0.6em;
+  font-size: 0.62em;
+  text-align: left;
+}
+
+/* ===== Hipotesis ===== */
+.hipotesis-box {
+  background: rgba(201,162,39,0.06);
+  border: 1px solid rgba(201,162,39,0.4);
+  border-radius: 12px;
+  padding: 0.8em 1em;
+  margin-top: 0.8em;
+  font-size: 0.62em;
+  text-align: left;
+}
+.hipotesis-box p { color: #fff; font-style: italic; }
+
+/* ===== Steps grid ===== */
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.8em;
+  margin-top: 1em;
+}
+.step-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(201,162,39,0.2);
+  border-radius: 10px;
+  padding: 0.8em 0.6em;
+  text-align: center;
+  font-size: 0.55em;
+  line-height: 1.4;
+}
+
+/* ===== Formula box ===== */
+.formula-box {
+  background: #0a1a10;
+  border: 1px solid rgba(201,162,39,0.3);
+  border-radius: 8px;
+  padding: 0.6em 0.8em;
+  text-align: center;
+  font-size: 0.58em;
+  color: #e8c547;
+  font-family: 'Courier New', monospace;
+  margin: 0.6em 0;
+}
+
+.minicard {
+  background: rgba(255,255,255,0.04);
+  border-radius: 8px;
+  padding: 0.5em;
+  text-align: center;
+  font-size: 0.55em;
+  color: #d4cfc4;
+}
+.minicard strong { color: #c9a227; }
+
+/* ===== Conclusiones grid ===== */
+.concl-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.8em;
+  margin-top: 0.5em;
+}
+.concl-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(201,162,39,0.2);
+  border-radius: 12px;
+  padding: 0.7em 0.9em;
+  font-size: 0.55em;
+  line-height: 1.5;
+  text-align: left;
+}
+.concl-card p { margin: 0.3em 0; }
+
+/* ===== Cierre ===== */
+.cierre-wrap { text-align: center; }
+.cierre-wrap h1 {
+  font-size: 2em;
+  color: #c9a227 !important;
+  border-bottom: none !important;
+}
+
+/* ===== General text sizing for .smaller slides ===== */
+.reveal .slides section.smaller {
+  font-size: 0.75em;
+}
+
+
+.columns {
+  display: flex;
+  gap: 1em;
+}
+
+.minicard {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(201,162,39,0.15);
+  border-radius: 8px;
+  padding: 0.7em;
+  text-align: center;
+  font-size: 0.55em;
+  color: #d4cfc4;
+  margin: 0.3em 0;
+}
+
+.minicard-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6em;
+}
+
+.column p {
+  text-align: justify;
+}
+
+.esquema-item {
+  font-size: 0.62em;  /* subido de 0.56em */
+  line-height: 1.5;
+  padding: 0.5em 0.8em;
+  margin-bottom: 0.4em;
+}
+
+section.smaller p {
+  font-size: 0.68em;
+}
+
+.esquema-item {
+  background: rgba(201,162,39,0.06);
+  border-left: 3px solid #c9a227;
+  border-radius: 0 8px 8px 0;
+  padding: 0.7em 1em;
+  margin-bottom: 0.5em;
+  font-size: 0.72em;
+  line-height: 1.55;
+  text-align: left;
+}
+
+section.smaller p {
+  font-size: 0.78em;
+}
+
+.esquema-item {
+  background: rgba(201,162,39,0.06);
+  border-left: 3px solid #c9a227;
+  border-radius: 0 8px 8px 0;
+  padding: 0.7em 1em;
+  margin-bottom: 0.5em;
+  font-size: 0.78em;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.esquema-item {
+  background: rgba(201,162,39,0.06);
+  border-left: 3px solid #c9a227;
+  border-radius: 0 8px 8px 0;
+  padding: 0.7em 1em;
+  margin-bottom: 0.5em;
+  font-size: 24px !important;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.esquema-item strong,
+.esquema-item span,
+.esquema-item p {
+  font-size: 24px !important;
+}
+
+.esquema-item {
+  background: rgba(201,162,39,0.06);
+  border-left: 3px solid #c9a227;
+  border-radius: 0 8px 8px 0;
+  padding: 0.6em 0.9em;
+  margin-bottom: 0.4em;
+  font-size: 20px !important;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+.esquema-item strong,
+.esquema-item span,
+.esquema-item p {
+  font-size: 20px !important;
+}
+
+.esquema-item {
+  background: rgba(201,162,39,0.06);
+  border-left: 3px solid #c9a227;
+  border-radius: 0 8px 8px 0;
+  padding: 0.6em 0.9em;
+  margin-bottom: 0.4em;
+  font-size: 17px !important;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+.esquema-item strong,
+.esquema-item span,
+.esquema-item p {
+  font-size: 17px !important;
+}
+
+.hipotesis-box {
+  background: rgba(201,162,39,0.06);
+  border: 1px solid rgba(201,162,39,0.4);
+  border-radius: 12px;
+  padding: 0.7em 1em;
+  margin: 0.6em 0;
+  font-size: 17px !important;
+  text-align: left;
+}
+
+.hipotesis-box p,
+.hipotesis-box strong {
+  font-size: 17px !important;
+}
+.hipotesis-box p { color: #fff; font-style: italic; }
+
+.esquema-item {
+  background: rgba(201,162,39,0.06);
+  border-left: 3px solid #c9a227;
+  border-radius: 0 8px 8px 0;
+  padding: 0.6em 0.9em;
+  margin-bottom: 0.4em;
+  font-size: 16px !important;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+.esquema-item strong,
+.esquema-item span,
+.esquema-item p {
+  font-size: 16px !important;
+}
+
+.hipotesis-box {
+  background: rgba(201,162,39,0.06);
+  border: 1px solid rgba(201,162,39,0.4);
+  border-radius: 12px;
+  padding: 0.7em 1em;
+  margin: 0.6em 0;
+  font-size: 16px !important;
+  text-align: left;
+}
+
+.hipotesis-box p,
+.hipotesis-box strong {
+  font-size: 16px !important;
+}
+.hipotesis-box p { color: #fff; font-style: italic; }
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+  margin-top: 1.2em;
+}
+
+.step-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(201,162,39,0.2);
+  border-radius: 12px;
+  padding: 1.3em 1.1em;
+  text-align: left;
+  font-size: 18px !important;
+  line-height: 1.5;
+}
+
+.step-card strong {
+  display: block;
+  color: #c9a227;
+  font-size: 18px !important;
+  margin-bottom: 0.6em;
+  text-align: center;
+}
+
+.step-card p {
+  font-size: 18px !important;
+}
+
+.step-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(201,162,39,0.2);
+  border-radius: 12px;
+  padding: 1.3em 1.1em;
+  text-align: left;
+  font-size: 18px !important;
+  line-height: 1.5;
+}
+
+.step-card .step-title {
+  display: block;
+  color: #c9a227;
+  font-size: 18px !important;
+  margin-bottom: 0.6em;
+  text-align: center;
+}
+
+.step-card strong {
+  color: #c9a227;
+  font-size: 18px !important;
+}
+
+.step-card p {
+  font-size: 18px !important;
+  margin-bottom: 0.5em;
+}
+
+.step-card code {
+  font-size: 0.85em;
+  background: rgba(255,255,255,0.08);
+  padding: 1px 4px;
+  border-radius: 3px;
+}
+
+.concl-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  margin-top: 0.8em;
+}
+
+.concl-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(201,162,39,0.2);
+  border-radius: 12px;
+  padding: 1.1em 1.3em;
+  font-size: 19px !important;
+  line-height: 1.55;
+  text-align: justify;
+}
+
+.concl-card strong {
+  color: #c9a227;
+  font-size: 19px !important;
+}
+
+.concl-card p {
+  font-size: 19px !important;
+  margin: 0.4em 0;
+}
+
+.concl-card em {
+  font-size: 19px !important;
+  color: #d4cfc4;
+}
+
+.concl-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  margin-top: 0.8em;
+}
+
+.concl-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(201,162,39,0.2);
+  border-radius: 12px;
+  padding: 1.1em 1.3em;
+  font-size: 16px !important;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.concl-card strong {
+  color: #c9a227;
+  font-size: 16px !important;
+}
+
+.concl-card p {
+  font-size: 16px !important;
+  margin: 0.4em 0;
+}
+
+.concl-card em {
+  font-size: 16px !important;
+  color: #d4cfc4;
+}
+
+.step-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(201,162,39,0.2);
+  border-radius: 12px;
+  padding: 1.3em 1.1em;
+  text-align: left;
+  font-size: 18px !important;
+  line-height: 1.5;
+}
+
+.step-card .step-title {
+  display: block !important;
+  color: #c9a227;
+  font-size: 18px !important;
+  margin-bottom: 0.6em;
+  text-align: center;
+}
+
+.step-card strong {
+  display: inline !important;
+  color: #c9a227;
+  font-size: 18px !important;
+}
+
+.step-card p {
+  font-size: 18px !important;
+  margin-bottom: 0.5em;
+}
+
+.step-card code {
+  font-size: 0.85em;
+  background: rgba(255,255,255,0.08);
+  padding: 1px 4px;
+  border-radius: 3px;
+}
+
+section.smaller > p:first-of-type {
+  font-size: 16px !important;
+}
+
+.step-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(201,162,39,0.2);
+  border-radius: 12px;
+  padding: 1.3em 1.1em;
+  text-align: left;
+  font-size: 17px !important;
+  line-height: 1.5;
+}
+
+.step-card .step-title {
+  display: block !important;
+  color: #c9a227;
+  font-size: 17px !important;
+  margin-bottom: 0.6em;
+  text-align: center;
+}
+
+.step-card strong {
+  display: inline !important;
+  color: #c9a227;
+  font-size: 17px !important;
+}
+
+.step-card em {
+  font-size: 17px !important;
+}
+
+.step-card p {
+  font-size: 17px !important;
+  margin-bottom: 0.5em;
+}
+
+.step-card code {
+  font-size: 0.85em;
+  background: rgba(255,255,255,0.08);
+  padding: 1px 4px;
+  border-radius: 3px;
+}
+
+.slide-16 p,
+.slide-16 td,
+.slide-16 th,
+.slide-16 strong,
+.slide-16 .formula-box,
+.slide-16 .esquema-item,
+.slide-16 .esquema-item p,
+.slide-16 .esquema-item strong,
+.slide-16 .highlight-box {
+  font-size: 16px !important;
+}
+
+.slide-16 p,
+.slide-16 td,
+.slide-16 th,
+.slide-16 strong,
+.slide-16 .formula-box,
+.slide-16 .esquema-item,
+.slide-16 .esquema-item p,
+.slide-16 .esquema-item strong,
+.slide-16 .highlight-box,
+.slide-16 .highlight-box p {
+  font-size: 17px !important;
+}
+
+
+
+.slide-16 p,
+.slide-16 td,
+.slide-16 th,
+.slide-16 strong,
+.slide-16 .formula-box,
+.slide-16 .esquema-item,
+.slide-16 .esquema-item p,
+.slide-16 .esquema-item strong,
+.slide-16 .highlight-box,
+.slide-16 .highlight-box p {
+  font-size: 17px !important;
+}
+
+.reveal section.smaller p,
+.reveal section.smaller li,
+.reveal section.smaller td,
+.reveal section.smaller th,
+.reveal section.smaller strong,
+.reveal section.smaller em,
+.reveal section.smaller .formula-box,
+.reveal section.smaller .esquema-item,
+.reveal section.smaller .esquema-item p,
+.reveal section.smaller .esquema-item strong,
+.reveal section.smaller .highlight-box,
+.reveal section.smaller .highlight-box p,
+.reveal section.smaller .alerta-box,
+.reveal section.smaller .alerta-box p,
+.reveal section.smaller .hipotesis-box,
+.reveal section.smaller .hipotesis-box p,
+.reveal section.smaller .concl-card,
+.reveal section.smaller .concl-card p,
+.reveal section.smaller .concl-card strong,
+.reveal section.smaller .step-card,
+.reveal section.smaller .step-card p,
+.reveal section.smaller .step-card strong,
+.reveal section.smaller .pregunta-box,
+.reveal section.smaller .pregunta-box p {
+  font-size: 17px !important;
+}
+
+
+.section-slide .esquema-item {
+  font-size: 16px !important;
+  text-align: left;
+  max-width: 700px;
+  margin: 0 auto 14px auto;
+}
+
+.section-slide .esquema-item strong,
+.section-slide .esquema-item p {
+  font-size: 16px !important;
+}
